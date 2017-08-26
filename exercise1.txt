@@ -2,3 +2,4 @@ This is just a exercise to familar with git command, I must do it every day prev
 Keep go on!
 Date:2017-8-26
 Time:16:19
+I just want to use command "git pull".
