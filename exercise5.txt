@@ -1,0 +1,14 @@
+some commands for using git and github
+Command:
+git init #make a directory be repository
+git add README.md
+git add -A
+git add .
+git commit -m "comment"
+git status
+git remote -v
+get remote add origin https://github.com/zhengzibing2011/hello-world.git
+git push -u origin master 
+git push
+
+
