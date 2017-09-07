@@ -1,0 +1,20 @@
+writing this text just for recall the code of show the shape of data and parameters of a layer in a net!
+1.First of all, list some commands of data and params
+(1).net.blobs is an object,
+net.blobs['layer_name'].data
+net.blobs['layer_name'].data.shape #dimension:(NxCxHxW)
+(2).net.params is object to store params that contributed by convolution and full connection layers
+net.params['layer_name'][0].data
+net.params['layer_name'][0].data.shape #dimension:(output_channel,input_channel,kernel_height,kernel_width)
+
+net.params['layer_name'][1].data
+net.params['layer_name'][1].data.shape #dimension:(output_channel,)
+
+2. Show the shape of data
+for layer_name, blob in net.blobs.iteritems():
+    print layer_name + '\t' + str(net.blobs.data.shape)
+
+3. show the shape of params
+for layer_name, param in net.params.iteritems():
+    print layer_name + '\t' + str(net.params[0].data.shape), str(net.params[1].data.shape)
+

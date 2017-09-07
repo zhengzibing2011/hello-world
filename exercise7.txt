@@ -1,0 +1,14 @@
+some commands just for recall git and github
+1. git init #make a directort be respository
+git add README.md
+git add -A
+git add .
+
+git status
+git commit -m "content"
+git remote -v
+git remote add origin https://github.com/zhengzibing2011/hello-world.git #the first time
+git push -u origin master #the first time
+git push
+
+git pull
