@@ -1,0 +1,24 @@
+The thing that I must do erery day!
+Date:2017-9-8
+Time:8:57-Beijing
+net.blobs:
+net.blobs['layer'].data
+net.blobs['layer'].data.shape
+the shape's form is:(NxCxHxW)
+
+net.params
+net.params['layer'][0].data
+net.params['layer'][0].data.shape
+the shape's form is:(output_channel,input_channel,kernel_height,kernel_width)
+net.params['layer'][1].data
+net.params['layer'][1].data.shape
+the shape's form is:(output_channel)
+
+show the shape of data and parameters of layer:
+shape of data
+for layer_name, blob in net.blobs.iteritems():
+    print layer_name + '\t' + str(blob.data.shape)
+
+shape of parameters
+for layer_name, param in net.params.iteritems():
+    print layer_name + '\t' + str(param[0].data.shape), str(param[1].data.shape)
