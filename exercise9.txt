@@ -1,0 +1,27 @@
+This is the daily exercises for recalling commands!
+1.Linux commands
+datastream redirection
+echo "ABCD" > temp.txt
+echo "ABCD" >> temp.txt
+
+echo "ABCD" | tee temp1.txt
+echo "ABCD" 2>&1 | temp1.txt
+
+2.caffe model
+net.blobs:
+net.blobs['blob_name'].data
+net.blobs['blob_name'].data.shape
+
+net.params
+net.params[0].['layer_name'].data
+net.params[0].['layer_name'].data.shape
+
+net.params[1].['layer_name'].data
+net.params[1].['layer_name'].data.shape
+
+3. show the shape of data and parameters
+for layer_name, blob in net.blobs.iteritems():
+    print layer_name + '\t' + str(blob.data.shape)
+
+for layer_name, param in net.params.iteritems():
+    print layer_name + '\t' + str(param[0].data.shape),str(param[1].data.shape)
