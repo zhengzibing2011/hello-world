@@ -4,3 +4,4 @@ I reinstall the system(Ubuntu14.04) and nvidia-driver because of the constraint 
 Date:2017-9-13
 Time:10:19 
 Address:Nanjing 
+Just add this line to modify this file for using "git pull"!
