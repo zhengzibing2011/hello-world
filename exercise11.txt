@@ -1,0 +1,6 @@
+A note about these three days that what I do
+I reinstall the system(Ubuntu14.04) and nvidia-driver because of the constraint of disk capacity which caused by installing double systems and the broken of docker container caffe-segnet. It takes almost three days from last Saturday to this Tuesday, it was a big project! Now everything is OK, I must do my best to study DL. Keep on going!
+
+Date:2017-9-13
+Time:10:19 
+Address:Nanjing 
