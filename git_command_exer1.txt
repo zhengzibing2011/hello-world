@@ -1,0 +1,14 @@
+Doing this exercise for recall git command
+git status
+git init #initialization a local repository.i.e make current dir be a repository,the first time!
+git clone https://github.com/zhengzibing2011/hello-world.git
+git add README.md
+git add .
+git add -A
+git commit -m "message"
+git remote -v
+git remote add origin https://github.com/zhengzibing2011/hello-world.git #the first time
+git push -u origin master # the first time, repository relation
+git push
+git pull
+
