@@ -1,0 +1,24 @@
+net blobs and net params:
+net.blobs
+produce net
+net = caffe.Net('solver.prototxt',weights,caffe.TEST)
+net.blobs['blob_name'].data #this is the feature map
+net.blobs['blob_name'].data.shape #this is the feature map's shape, NxCxHxW
+#show the shape of data and param
+for layer_name, blob in net.blobs.iteritems():
+    print layer_name + '\t' + str(blob.data.shape)
+
+net.params
+net.params['layer_name'][0].data
+the shape's form of weights is (output_channel,input_channel,kernel_size_height,kernel_size_width)
+net.params['layer_name'][0].data.shape
+net.params['layer_name'][1].data
+net.params['layer_name'][1].data.shape
+the shape's form of biases is (output_channel,)
+
+#show the shape of parameters
+for layer_name, param in net.params.iteritems():
+    print layer_name + '\t' + str(param.[0].data.shape), str(param.[1].data.shape)
+
+
+

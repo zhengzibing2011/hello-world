@@ -1,0 +1,11 @@
+echo "export CAFFE_ROOT=/home/caffe" >> ~/.bashrc
+echo "ABCD" > temp.txt
+echo "ABCD" >> temp.txt
+echo "ABCD" | tee /home/caffe.temp.txt
+
+diff temp1.txt temp2.txt
+c:change
+d:delete
+a:add
+
+
