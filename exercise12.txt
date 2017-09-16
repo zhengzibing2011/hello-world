@@ -1,0 +1,59 @@
+Linux command:
+datastream redirection
+echo "ABCD" > temp1.txt
+echo "ABCD" >> temp2.txt
+echo "export CAFFE_ROOT=/home/caffe" >> ~/.bashrc
+
+echo "ABCD" | tee temp1.txt
+echo "ABCD" 2&1 | tee temp2.txt
+
+
+network structure:
+net = caffe.Net('solver.prototxt',weights,caffe.TEST)
+net.blobs['bolb_name'].data
+net.blobs['blob_name'].data.shape #NxCxHxW
+show the shape of all layers:
+for layer_name, blob in net.blobs.iteritems():
+    print layer_name + '\t' + str(blob['blob_name'].data.shape)
+
+net.params['layer_name'][0].data #weights
+net.params['layer_name'][0].data.shape # (output_channel,input_channel,kernel_height,kernel_width)
+net.params['layer_name'][1].data #parameters
+net.params['layer_name'][1].data.shape #(output_channel,)
+for layer_name, param in net.params.iteritems():
+    print layer_name + '\t' + str(param['layer_name'][0].data.shape),str(param['layer_name'][1].data.shape) 
+
+Blobs:
+Blobs have 4 datamember:
+data
+shape
+count
+capacity
+function of member:
+shared_ptr<>_data
+shared_ptr<>_diff
+
+Layers:
+function of member:
+setup()
+reshape()
+forward()
+backward()
+datamember:
+params
+
+Net:
+init()
+forward()
+backward()
+
+Solver:
+
+
+
+
+
+
+
+
+
