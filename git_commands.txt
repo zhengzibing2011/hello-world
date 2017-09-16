@@ -1,0 +1,12 @@
+git init #initialize a directory to be a repository
+git add README.md
+git add .
+git add -a
+git remote -v
+git remote add origin https://github.com/zhengzibing2011/hello-world.git #the first time
+git commit -m "message"
+git push -u origin master 
+git push
+git status
+git clone
+git pull
