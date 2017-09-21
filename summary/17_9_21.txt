@@ -1,0 +1,5 @@
+From now on, I will write some summary about the gains that I have get on that day!
+1. Understanding the transformation from full connect layer to convolution net, mainly about the computing of parameters.
+2. Learning how to write deploy.prototxt file depends on train_val.prototxt. Just removing the params about weight, bias and modifing data layer.
+3. Learning how to delete file on local repository and synchronize with github.
+That's all!
